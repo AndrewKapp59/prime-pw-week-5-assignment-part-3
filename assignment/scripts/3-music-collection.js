@@ -4,18 +4,13 @@ let collection = [];
 
 console.log(collection, 'I have', collection.length, 'records in my collection');
 
-function  addToCollection (record) {
+function addToCollection (record) {
   collection.push(record);
+  console.log(record,'added. I now have', collection.length, 'records in my collection');
+  return true;
 }
 
-
-
-addToCollection (record0);
-
-console.log(collection, 'I have', collection.length, 'record in my collection');
-
 //Record List
-
 let record0 = {
   title: 'Costello Music',
   artist: 'The Fratellis',
@@ -57,3 +52,11 @@ let record6 = {
   artist: 'Bonobo',
   yearPublished: 2010,
 }
+
+addToCollection(record0);
+addToCollection(record1);
+addToCollection(record2);
+addToCollection(record3);
+addToCollection(record4);
+addToCollection(record5);
+addToCollection(record6);
