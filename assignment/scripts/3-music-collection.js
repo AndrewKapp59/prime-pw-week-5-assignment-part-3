@@ -71,3 +71,18 @@ function showCollection(rcollection) {
 }
 
 showCollection(collection)
+
+function findByArtist(artist) {
+  let artistArray = []
+  for (let i = 0; i < collection.length; i++) {
+    if (artist === collection[i].artist) {
+      artistArray.push(collection[i])
+    }
+
+    }
+  }
+}
+
+
+findByArtist('The Black Keys')
+findByArtist('Spoon')
