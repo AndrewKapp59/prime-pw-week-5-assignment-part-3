@@ -2,7 +2,7 @@ console.log('***** Music Collection *****')
 
 let collection = [];
 
-console.log(collection);
+console.log(collection, 'I have', collection.length, 'records in my collection');
 
 let record0 = {
   title: 'Costello Music',
@@ -16,7 +16,7 @@ function  addToCollection (record) {
 
 addToCollection (record0);
 
-console.log(collection);
+console.log(collection, 'I have', collection.length, 'record in my collection');
 
 let record1 = {
   title: '',
