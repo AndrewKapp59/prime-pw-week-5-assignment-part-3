@@ -66,7 +66,7 @@ console.log(collection, 'I currently have', collection.length, 'records in my co
 function showCollection(rcollection) {
   console.log('I currently have', rcollection.length, 'records in my collection');
   for (let i = 0; i < rcollection.length; i++) {
-    console.log(rcollection[i]);
+    console.log(rcollection[i].title, 'by',rcollection[i].artist, 'published in', rcollection[i].yearPublished);
   }
 }
 
