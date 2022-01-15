@@ -2,7 +2,7 @@ console.log('***** Music Collection *****')
 
 let collection = [];
 
-console.log(collection, 'I have', collection.length, 'records in my collection');
+console.log(collection, 'I currenlty have', collection.length, 'records in my collection');
 
 function addToCollection (record) {
   collection.push(record);
@@ -60,3 +60,14 @@ addToCollection(record3);
 addToCollection(record4);
 addToCollection(record5);
 addToCollection(record6);
+
+console.log(collection, 'I currently have', collection.length, 'records in my collection');
+
+function showCollection(rcollection) {
+  console.log('I currently have', rcollection.length, 'records in my collection');
+  for (let i = 0; i < rcollection.length; i++) {
+    console.log(rcollection[i]);
+  }
+}
+
+showCollection(collection)
