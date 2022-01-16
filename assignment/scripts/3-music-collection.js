@@ -7,7 +7,6 @@ console.log(collection, 'I currenlty have', collection.length, 'records in my co
 function addToCollection (record) {
   collection.push(record);
   console.log(record,'added. I now have', collection.length, 'records in my collection');
-  return true;
 }
 
 //Record List
@@ -53,6 +52,7 @@ let record6 = {
   yearPublished: 2010,
 }
 
+//adding six records
 addToCollection(record0);
 addToCollection(record1);
 addToCollection(record2);
@@ -79,7 +79,7 @@ function findByArtist(artist) {
       artistArray.push(collection[i]);
     }
   }
-  console.log('We found', artistArray.length, 'matches', artistArray);
+  console.log( artistArray.length, 'matches were found for', artist, artistArray);
 }
 
 findByArtist('The Black Keys');
