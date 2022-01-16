@@ -70,19 +70,17 @@ function showCollection(rcollection) {
   }
 }
 
-showCollection(collection)
+showCollection(collection);
 
 function findByArtist(artist) {
-  let artistArray = []
+  let artistArray = [];
   for (let i = 0; i < collection.length; i++) {
     if (artist === collection[i].artist) {
-      artistArray.push(collection[i])
-    }
-
+      artistArray.push(collection[i]);
     }
   }
+  console.log('We found', artistArray.length, 'matches', artistArray);
 }
 
-
-findByArtist('The Black Keys')
+findByArtist('The Black Keys');
 findByArtist('Spoon')
