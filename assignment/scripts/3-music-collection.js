@@ -4,62 +4,24 @@ let collection = [];
 
 console.log(collection, 'I currenlty have', collection.length, 'records in my collection');
 
-function addToCollection (record) {
-  collection.push(record);
-  console.log(record,'added. I now have', collection.length, 'records in my collection');
+function addToCollection (title, artist, yearPublished) {
+  let record = {
+    title: title,
+    artist: artist,
+    yearPublished: yearPublished,
+  }
+  collection.push(record)
+  return console.log(record,'added. I now have', collection.length, 'records in my collection');
 }
 
-//Record List
-let record0 = {
-  title: 'Costello Music',
-  artist: 'The Fratellis',
-  yearPublished: 2007,
-}
-
-let record1 = {
-  title: 'El Camino',
-  artist: 'The Black Keys',
-  yearPublished: 2011,
-}
-
-let record2 = {
-  title: 'Brothers',
-  artist: 'The Black Keys',
-  yearPublished: 2010,
-}
-
-let record3 = {
-  title: 'Heart It Races',
-  artist: 'Dr Dog',
-  yearPublished: 2007,
-}
-
-let record4 = {
-  title: 'Classics',
-  artist: 'Ratatat',
-  yearPublished: 2006,
-}
-
-let record5 = {
-  title: 'My First Car',
-  artist: 'Vulfpeck',
-  yearPublished: 2013,
-}
-
-let record6 = {
-  title: 'Black Sands',
-  artist: 'Bonobo',
-  yearPublished: 2010,
-}
-
-//adding six records
-addToCollection(record0);
-addToCollection(record1);
-addToCollection(record2);
-addToCollection(record3);
-addToCollection(record4);
-addToCollection(record5);
-addToCollection(record6);
+//Adding 7 records
+addToCollection('Costello Music','The Fratellis', 2007);
+addToCollection('El Camino', 'The Black Keys', 2011);
+addToCollection('Brothers', 'The Black Keys', 2010);
+addToCollection('Heart It Races', 'Dr Dog', 2007);
+addToCollection('Classics', 'Ratatat', 2006);
+addToCollection('My First Car', 'Vulfpeck', 2013);
+addToCollection('Black Sands', 'Bonobo', 2010);
 
 console.log(collection, 'I currently have', collection.length, 'records in my collection');
 
